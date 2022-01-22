@@ -1,23 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const styles = {
+    boxStyle: {
+      width: '100%',
+      height: '100%',
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '15px',
+      paddingLeft: '10px',
+    },
+    cardStyles: {
+      background: 'orange',
+      width: '300px',
+      height: '200px',
+    },
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ width: '100%', height: '100vh' }}>
+      <div style={{ width: '100%', background: 'blue', height: '20%' }}>
+      </div>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 30%', height: '80%'}}>
+        <div style={{overflowY: 'scroll', overflowX: 'hidden'}}>
+          <div style={styles.boxStyle}>
+            <div style={styles.cardStyles}>card</div>
+            <div style={styles.cardStyles}>card</div>
+            <div style={styles.cardStyles}>card</div>
+            <div style={styles.cardStyles}>card</div>
+            <div style={styles.cardStyles}>card</div>
+            <div style={styles.cardStyles}>card</div>
+            <div style={styles.cardStyles}>card</div>
+            <div style={styles.cardStyles}>card</div>
+            <div style={styles.cardStyles}>card</div>
+            <div style={styles.cardStyles}>card</div>
+            <div style={styles.cardStyles}>card</div>
+            <div style={styles.cardStyles}>card</div>
+            <div style={styles.cardStyles}>card</div>
+            <div style={styles.cardStyles}>card</div>
+            <div style={styles.cardStyles}>card</div>
+          </div>
+        </div>
+        <div style={{background: 'green'}}>
+        </div>
+      </div>
     </div>
   );
 }
